@@ -56,14 +56,6 @@
         border: none;
         border-radius: 15px;
     }
-    .film-card p {
-        font-size: 25px;
-        font-style: italic;
-        margin-top: 8px;
-        overflow-wrap: break-word;
-        font-family: "Georgia", serif;
-        color: rgb(173, 107, 5);
-    }
     @media (max-width: 700px) {
         .video-container {
             grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -74,6 +66,22 @@
         height: 250px;
         width: 100%;
     }
+    .film-title {
+        font-size: 25px;
+        font-style: italic;
+        margin-top: 8px;
+        overflow-wrap: break-word;
+        font-family: "Georgia", serif;
+        color: rgb(173, 107, 5)
+    }
+    .film-description {
+        color: #B5B5A1;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
 }
     </style>
 <body>
@@ -96,7 +104,11 @@
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
     </iframe>
-    <p>A Trip to the Moon</p>
+    <p class="film-title">A Trip to the Moon</p>
+    <p class="film-description">
+        The first science fiction film!
+        dir. Georges Melies
+    </p>
 </div>
       <div class="film-card">
           <iframe
