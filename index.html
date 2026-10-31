@@ -25,51 +25,43 @@
         .section {
             margin: 30px 10px;
         }
-       .video-container {
-           display: grid;
-           grid-template-columns: repeat(4, minmax(0, 1fr));
-           gap: 20px;
-           width: 100%;
-           align-items: start;
-       }
-        .film-card {
-            min-width: 0;width: 100%;
+     .video-container {
+         display: grid;
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+         gap: 15px;
+         width: 100%;
+         align-items: start;
+     }
+    .film-card {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+    .film-card iframe,
+    .film-card img {
+        display: block;
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+        border: none;
+        border-radius: 12px;
+    }
+    .film-card p {
+        font-size: 12px;
+        font-style: italic;
+        margin-top: 8px;
+        overflow-wrap: break-word;
+    }
+    @media (max-width: 700px) {
+        .video-container {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
         }
-        .film-card img,
-        .film-card iframe {
-            display: block;
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border: none;
-            border-radius: 15px;
-        }
-        .film-card p {
-            font-style: italic;
-            margin-top: 10px;
-        }
-        .section h3 {
-            color: rgb(255, 214, 148);
-            font-family: Trebuchet MS, serif;
-            font-weight: 30 px;
-            
-        }
-        .section-description {
-            font-style: italic;
-            color: white;
-        }
-        @media (max-width: 700px) {
-            .video-container {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
-                gap: 10px;
-            }
-        }
-            .film-card iframe,
-            .film-card img {
-                height: 100px;
-            }
-        }
-        }
+    .film-card iframe,
+    .film-card img {
+        height: 75px;
+    }
+}
     </style>
 <body>
     <h1>FILM SPECTRUM</h1>
@@ -171,6 +163,7 @@
     <p class="section-description">
         The modern era of cinema, where creativity and influence matters.
     </p>
+  <div class="video-container">
     <div class="film-card">
         <iframe
             src="https://www.youtube.com/embed/kQUPdVxZNPk"
